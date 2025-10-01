@@ -21,7 +21,7 @@ const About = () => {
           transition={{ duration: 0.6, delay: 0.1 }}
         >
           <p className='text-neutral-700 leading-relaxed mb-6 max-w-2xl'>
-          I’m someone who enjoys bringing ideas to life. Coding gives me the freedom to do that while keeping things simple and clean. I follow simplicity, pay attention to details, and trust my intuition to structure things in a way that just feels right. I think differently, and that’s my strength. Here to shine and be limitless!
+         I follow simplicity, pay attention to details, and trust my intuition to structure things in a way that just feels right. I think differently, and that’s my strength. Here to shine and be limitless!
           </p>
         
           <Hire/>
