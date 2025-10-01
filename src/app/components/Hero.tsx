@@ -1,7 +1,6 @@
 'use client'
 import React, { JSX, useRef, useState } from 'react'
 import { motion, useMotionValueEvent, useScroll } from 'motion/react'
-import Link from 'next/link'
 
 const icons: Record<string, JSX.Element> = {
   x: (
@@ -182,7 +181,7 @@ const Hero = () => {
        
         <div>
           <h1 className='text-3xl font-medium tracking-tight text-neutral-900'>Pawan Mishra</h1>
-          <p className='text-md text-neutral-500'>I'm a software engineer though with an eye for design.<br className='md:block hidden'></br> I somehow get things done.</p>
+          <p className='text-md text-neutral-500'>I&apos;m a software engineer though with an eye for design.<br className='md:block hidden'></br> I somehow get things done.</p>
           <p className='text-sm text-neutral-400 pt-1 pb-3'>Pune, Maharashtra, India</p>
         </div>
       </div>

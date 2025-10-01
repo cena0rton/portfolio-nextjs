@@ -1,7 +1,6 @@
 'use client'
 import React from 'react'
 import { motion } from 'motion/react'
-import Link from 'next/link'
 
 const About = () => {
   return (
@@ -34,14 +33,14 @@ const About = () => {
 
 export default About
 
-const Hire = ({className}:{className?: string}) => {
+const Hire = () => {
     return (
-      <Link href="https://cal.com/pawanmishra/30min" target="_blank" className="mb-6 hover:scale-110 text-neutral-700 text-base font-light bg-neutral-100 px-4 py-2 cursor-pointer relative">
+      <a href="https://cal.com/pawanmishra/30min" target="_blank" rel="noopener noreferrer" className="mb-6 hover:scale-110 text-neutral-700 text-base font-light bg-neutral-100 px-4 py-2 cursor-pointer relative">
         <span className="w-1 h-1 absolute top-0 -left-0 bg-neutral-300 -translate-x-1/2 -translate-y-1/2 rounded-full animate-pulse"></span>
         <span className="w-1 h-1 absolute top-0 right-0 bg-neutral-300 translate-x-1/2 -translate-y-1/2 rounded-full animate-pulse"></span>
         <span className="w-1 h-1 absolute bottom-0 right-0 bg-neutral-300 translate-x-1/2 translate-y-1/2 rounded-full animate-pulse"></span>
         <span className="w-1 h-1 absolute bottom-0 left-0 bg-neutral-300 -translate-x-1/2 translate-y-1/2 rounded-full animate-pulse"></span>
         Book a call?
-        </Link>
+        </a>
     )
   }
