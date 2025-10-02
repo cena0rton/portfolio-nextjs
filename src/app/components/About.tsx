@@ -35,7 +35,7 @@ export default About
 
 const Hire = () => {
     return (
-      <a href="https://cal.com/pawanmishra/30min" target="_blank" rel="noopener noreferrer" className="mb-6 hover:scale-110 text-neutral-700 text-base font-light bg-neutral-100 px-4 py-2 cursor-pointer relative group">
+      <a href="https://cal.com/pawanmishra/30min" target="_blank" rel="noopener noreferrer" className="mb-6 hover:scale-110 text-neutral-700 text-base font-light bg-white px-4 py-2 cursor-pointer relative group shadow-[inset_-12px_-8px_40px_#46464620]">
         <span className="size-1 absolute top-0 -left-0 bg-neutral-500 -translate-x-1/2 -translate-y-1/2 rounded-full animate-pulse group-hover:bg-blue-500"></span>
         <span className="w-1 h-1 absolute top-0 right-0 bg-neutral-500 translate-x-1/2 -translate-y-1/2 rounded-full animate-pulse group-hover:bg-blue-500"></span>
         <span className="w-1 h-1 absolute bottom-0 right-0 bg-neutral-500 translate-x-1/2 translate-y-1/2 rounded-full animate-pulse group-hover:bg-blue-500"></span>

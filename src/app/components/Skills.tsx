@@ -19,7 +19,8 @@ const Skills = () => {
   ]
 
   return (
-    <div id="skills" className="mt-6 border-t  pb-3 border-neutral-200">
+    <motion.div id="skills"
+    className="mt-6 border-t  pb-3 border-neutral-200">
       <motion.h2 
         className='text-2xl tracking-tight font-medium mt-6 text-neutral-900 mb-6'
         initial={{ opacity: 0, y: 20 }}
@@ -34,8 +35,8 @@ const Skills = () => {
           <motion.div
             key={categoryIdx}
             initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: categoryIdx * 0.1 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: categoryIdx * 0.5 }}
           >
             <h3 className='text-lg font-medium text-neutral-900 mb-4'>{category.title}</h3>
             
@@ -45,7 +46,7 @@ const Skills = () => {
                   key={skillIdx}
                   className='bg-neutral-100 px-4 py-2 rounded-full'
                   initial={{ opacity: 0, scale: 0.8 }}
-                  animate={{ opacity: 1, scale: 1 }}
+                  whileInView={{ opacity: 1, scale: 1 }}
                   transition={{ duration: 0.4, delay: (categoryIdx * 0.1) + (skillIdx * 0.05) }}
                 >
                   <span className='text-sm font-medium text-neutral-900'>{skill}</span>
@@ -55,7 +56,7 @@ const Skills = () => {
           </motion.div>
         ))}
       </div>
-    </div>
+    </motion.div>
   )
 }
 

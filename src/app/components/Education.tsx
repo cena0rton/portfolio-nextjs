@@ -12,7 +12,7 @@ const Education = () => {
                
 
             <div className=" flex flex-col gap-1">
-             <p className='text-base tracking-tight text-neutral-800'>Birla Institiute of Technology and Sciences, Pilani</p>
+             <p className='text-base tracking-tight text-neutral-900 mb-1'>Birla Institiute of Technology and Sciences, Pilani</p>
               
             <p className='text-sm text-neutral-700'>B.Tech in Electronics and Electrical Engineering</p>
             <p className='text-sm text-neutral-600'>Masters Of Sciences Chemistry</p>
