@@ -181,7 +181,7 @@ const Hero = () => {
        
         <div>
           <h1 className='text-3xl font-medium tracking-tight text-neutral-900'>Pawan Mishra</h1>
-          <p className='text-md text-neutral-500'>I&apos;m a software engineer though with an eye for design.<br className='md:block hidden'></br> I somehow get things done.</p>
+          <p className='text-md text-neutral-500'>Software Engineer with an eye for design.<br/> I build clean, simple, and impactful digital experiences.</p>
           <p className='text-sm text-neutral-400 pt-1 pb-3'>Pune, Maharashtra, India</p>
         </div>
       </div>
@@ -223,7 +223,7 @@ const Hero = () => {
             {hover === idx && (
               <motion.div
                 layoutId="hover-span-2"
-                className="absolute inset-0 rounded-md bg-neutral-200 w-full h-full"
+                className="absolute inset-0 rounded-md bg-neutral-100 w-full h-full"
               />
             )}
             <span className='relative z-10'>{item.label}</span>
