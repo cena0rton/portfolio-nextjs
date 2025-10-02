@@ -5,11 +5,11 @@ import { motion } from 'motion/react'
 
 const projects = [
   {
-    title: 'Wellness Journey – Diet & Fitness App',
+    title: 'Diet Doctor Harnoor',
     description: 'A modern dietician app for a client',
     image: '/p1.png',
     alt: 'E-Commerce Platform',
-    details: 'Built a dietician app with modern UI and features like appointment booking, diet plan creation, and progress tracking and payment integration.',
+    details: 'Built a dietician app with modern UI and features like appointment booking, diet plan creation, admin dashboard, and progress tracking and payment integration.',
     tech: ['Next.js', 'TypeScript', 'Tailwind CSS', 'Motion.dev', 'Google Sheet API'],
     github: 'https://github.com/cena0rton/dietician-app',
     live: 'https://dtdietdoctorharnoor.com'

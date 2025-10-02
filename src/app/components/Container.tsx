@@ -10,8 +10,8 @@ const Container = ({children, className}: {children: React.ReactNode, className?
         {children}
         </div>
         
-        <div className="absolute top-0 -left-0 w-[10px] h-full bg-[repeating-linear-gradient(45deg,rgba(0,0,0,0.08)_0px,rgba(0,0,0,0.08)_1px,transparent_1px,transparent_10px)] border-x border-neutral-200 z-10"></div>
-        <div className="absolute top-0 right-0 w-[10px] h-full bg-[repeating-linear-gradient(45deg,rgba(0,0,0,0.08)_0px,rgba(0,0,0,0.08)_1px,transparent_1px,transparent_10px)] border-x border-neutral-200 z-10"></div>
+        <div className="absolute top-[100px] -bottom-[20px] md:top-[176px] -left-[0px] w-[10px] max-h-full bg-[repeating-linear-gradient(45deg,rgba(0,0,0,0.08)_0px,rgba(0,0,0,0.08)_1px,transparent_1px,transparent_10px)] border-x border-neutral-200 z-10"></div>
+        <div className="absolute top-[100px] -bottom-[20px] -right-[0px] md:top-[176px] w-[10px] max-h-full bg-[repeating-linear-gradient(45deg,rgba(0,0,0,0.08)_0px,rgba(0,0,0,0.08)_1px,transparent_1px,transparent_10px)] border-x border-neutral-200 z-10"></div>
        
     </div>
     </>
