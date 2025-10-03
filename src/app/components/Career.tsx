@@ -28,7 +28,7 @@ const Career = () => {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6, delay: 0.1 }}
     className="mt-6 border-t border-t-neutral-200 "> 
-        <h2 className='text-2xl tracking-tight font-medium mt-3 text-neutral-900 mb-4'>Career</h2>
+        <h2 className='text-2xl tracking-tight font-medium mt-3 text-neutral-900 mb-4'>Experience</h2>
         <div className='flex flex-col gap-4 w-full bg-neutral-50'>
         {career.map((car, idx)=>
           (  <div key={idx} className='flex flex-col bg-neutral-50'>
