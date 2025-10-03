@@ -36,7 +36,7 @@ const projects = [
   },
   {
     title: 'getRepo.dev',
-    description: 'Making a dent in Open Source world',
+    description: 'Making a dent in Open Source world (live but coming soon.)',
     image: '/p4.png',
     alt: 'GetRepo',
     details: 'A platform designed to make a significant impact in the open source ecosystem by simplifying repository discovery and contribution. Features intuitive search, project insights, and tools to help users engage with open source projects more effectively.',
