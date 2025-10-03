@@ -16,23 +16,23 @@ const projects = [
   },
   {
     title: 'Radial – SaaS Landing Experience',
-    description: 'Collaborative project management tool',
+    description: 'Collaborative project management tool tempalate',
     image: '/p2.webp',
     alt: 'Saas Landing Page Template',
     details: 'Engineered a high-performance, conversion-optimized marketing website for a project management SaaS platform, delivering exceptional user experience through modern web technologies and performance-first architecture.',
-    tech: ['React', 'Next.ja', 'Motion.dev', 'Tailwind CSS', 'TypeScript'],
+    tech: ['React', 'Next.js', 'Motion.dev', 'Tailwind CSS', 'TypeScript'],
     github: 'https://github.com/cena0rton/radial-marketing-template',
     live: 'https://radial-marketing-template.vercel.app/'
   },
   {
-    title: 'Weather Dashboard',
-    description: 'Real-time weather tracking with forecasts',
-    image: '/p1.png',
+    title: 'Portfolio',
+    description: 'Personal portfolio website showcasing my work and skills',
+    image: '/p3.png',
     alt: 'Weather Dashboard',
-    details: 'A beautiful weather dashboard that provides current conditions and 7-day forecasts. Features location-based weather, interactive maps, and detailed meteorological data with smooth animations.',
-    tech: ['Vue.js', 'Chart.js', 'OpenWeather API', 'PWA'],
-    github: 'https://github.com/username/weather',
-    live: 'https://weather-demo.vercel.app'
+    details: 'A personal portfolio website that highlights my projects, skills, and experience. Designed with a clean interface, responsive layout, and smooth animations to provide an engaging and accessible showcase of my work.',
+    tech: ['Farmer Motion', 'Tailwind CSS', 'Next.js', 'UI/UX', "TypeScript"],
+    github: 'https://github.com/cena0rton/portfolio-nextjs',
+    live: 'https://pawanme.vercel.app'
   },
   {
     title: 'getRepo.dev',
