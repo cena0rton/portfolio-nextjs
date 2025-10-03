@@ -35,14 +35,14 @@ const projects = [
     live: 'https://weather-demo.vercel.app'
   },
   {
-    title: 'Portfolio Website',
-    description: 'Personal portfolio with interactive elements',
-    image: '/p1.png',
-    alt: 'Portfolio Website',
-    details: 'A modern, responsive portfolio website showcasing projects and skills. Features smooth scrolling, interactive animations, and a clean, professional design that adapts to all devices.',
-    tech: ['Next.js', 'Framer Motion', 'Tailwind CSS', 'TypeScript'],
-    github: 'https://github.com/username/portfolio',
-    live: 'https://portfolio-demo.vercel.app'
+    title: 'getRepo.dev',
+    description: 'Making a dent in Open Source world',
+    image: '/p4.png',
+    alt: 'GetRepo',
+    details: 'A platform designed to make a significant impact in the open source ecosystem by simplifying repository discovery and contribution. Features intuitive search, project insights, and tools to help users engage with open source projects more effectively.',
+    tech: ['Next.js', 'Framer Motion', 'Tailwind CSS', 'TypeScript', 'Rest API'],
+    github: 'https://github.com/cena0rton/getRepo.dev',
+    live: 'https://getrepo-dev.vercel.app'
   }
 ];
 
@@ -97,7 +97,7 @@ const Projects = () => {
             </button>
 
             {/* Modal Body */}
-            <div className="p-8 max-h-[90vh] mb-10 md:mb-0">
+            <div className="p-8 max-h-[90vh] pb-10 md:mb-0">
               <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
                 {/* Image Section */}
                 <motion.div 

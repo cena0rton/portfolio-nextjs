@@ -21,7 +21,7 @@ const About = () => {
           transition={{ duration: 0.6, delay: 0.1 }}
         >
           <p className='text-neutral-700 leading-relaxed mb-6 max-w-2xl'>
-         I follow simplicity, pay attention to details, and trust my intuition to structure things in a way that just feels right. I think differently, and that’s my strength.I move Fast.
+         I follow simplicity, pay attention to details, and trust my intuition to structure things in a way that just feels right. I think differently, and that’s my strength. I move Fast.
           </p>
         
           <Hire/>
