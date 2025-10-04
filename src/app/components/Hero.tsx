@@ -186,7 +186,7 @@ const Hero = () => {
         </div>
       </div>
 
-      <div className="flex flex-row items-center justify-between w-full border-b border-neutral-200">
+      <div className="flex flex-row items-center justify-between w-full border-b border-neutral-100 md:border-neutral-200">
 
       <div className="flex space-x-4 mt-1 items-center pb-5   py-4">
         {links.map(link => (
@@ -288,15 +288,15 @@ const Hero = () => {
    </motion.div>
    }
 
-      {/* {!scrolled && (
+      {!scrolled && (
         <motion.div
-          className="md:hidden border-b border-neutral-200 bg-neutral-50 overflow-x-auto w-full border-t-0"
+          className="md:hidden border-b border-neutral-200 bg-neutral-50 overflow-x-auto w-full border-t-0 "
           initial={{ opacity: 0 }}
           exit={{ opacity: 0, height: 0 }}
           animate={{ opacity: 1, height: 'auto' }}
           transition={{ duration: 0.5, ease: "easeInOut" }}
         >
-          <div className="flex py-2">
+          <div className="flex py-0 -ml-3">
             {navItems.map((item, idx) => (
               <motion.button
               transition={{ duration: 0.4, delay: 0.05*idx }}
@@ -312,7 +312,7 @@ const Hero = () => {
             ))}
           </div>
         </motion.div>
-      )} */}
+      )}
     </div>
     </>
   )
