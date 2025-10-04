@@ -22,7 +22,7 @@ const Skills = () => {
     <motion.div id="skills"
     className="mt-6 border-t  pb-3 border-neutral-200">
       <motion.h2 
-        className='text-2xl tracking-tight font-medium mt-6 text-neutral-900 mb-6'
+        className='text-2xl tracking-tight font-medium mt-3 text-neutral-900 mb-6'
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6 }}

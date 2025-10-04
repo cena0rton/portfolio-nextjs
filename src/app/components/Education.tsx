@@ -23,8 +23,9 @@ const Education = () => {
            <Image src="/bits.png" alt="Birla Institiute of Technology and Sciences, Pilani" width={80} height={80} />
             </div>
            
-         
+            <div className="bg-neutral-50 h-20 md:h-10"></div>
         </div>
+       
     </div>
   )
 }

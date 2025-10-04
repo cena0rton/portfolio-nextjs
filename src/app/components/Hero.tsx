@@ -186,9 +186,9 @@ const Hero = () => {
         </div>
       </div>
 
-      <div className="flex flex-row items-center justify-between w-full">
+      <div className="flex flex-row items-center justify-between w-full border-b border-neutral-200">
 
-      <div className="flex space-x-4 mt-1 items-center  py-4">
+      <div className="flex space-x-4 mt-1 items-center pb-5   py-4">
         {links.map(link => (
           <a
             key={link.href}
@@ -196,7 +196,9 @@ const Hero = () => {
             target="_blank"
             rel="noopener noreferrer"
             aria-label={link.label}
-            className='hover:scale-110 transition-all duration-300'
+            className='hover:scale-110 transition-all duration-200 rounded-xl p-1  
+            shadow-[0px_0px_0px_1px_rgba(0,0,0,0.06),0px_1px_1px_-0.5px_rgba(0,0,0,0.06),0px_3px_3px_-1.5px_rgba(0,0,0,0.06),_0px_6px_6px_-3px_rgba(0,0,0,0.06),0px_12px_12px_-6px_rgba(0,0,0,0.06),0px_24px_24px_-12px_rgba(0,0,0,0.06)]
+            '
           >
             {icons[link.icon]}
           </a>
@@ -286,7 +288,7 @@ const Hero = () => {
    </motion.div>
    }
 
-      {!scrolled && (
+      {/* {!scrolled && (
         <motion.div
           className="md:hidden border-b border-neutral-200 bg-neutral-50 overflow-x-auto w-full border-t-0"
           initial={{ opacity: 0 }}
@@ -310,7 +312,7 @@ const Hero = () => {
             ))}
           </div>
         </motion.div>
-      )}
+      )} */}
     </div>
     </>
   )
