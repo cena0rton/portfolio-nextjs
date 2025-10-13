@@ -5,7 +5,17 @@ import { motion } from 'motion/react'
 
 const projects = [
   {
-    title: 'Diet Doctor Harnoor',
+    title: 'getRepo.dev',
+    description: 'Making a dent in Open Source world',
+    image: '/getrepo.webp',
+    alt: 'GetRepo',
+    details: 'A platform designed to make a significant impact in the open source ecosystem by simplifying repository discovery and contribution. Features intuitive search, project insights, and tools to help users engage with open source projects more effectively.',
+    tech: ['Next.js', 'Framer Motion', 'Tailwind CSS', 'TypeScript', 'Rest API'],
+    github: 'https://github.com/cena0rton/getRepo.dev',
+    live: 'https://getrepo-dev.vercel.app'
+  },
+  {
+    title: 'Freelance Project',
     description: 'A modern dietician app for a client',
     image: '/p1.png',
     alt: 'E-Commerce Platform',
@@ -34,16 +44,7 @@ const projects = [
     github: 'https://github.com/cena0rton/portfolio-nextjs',
     live: 'https://pawanme.vercel.app'
   },
-  {
-    title: 'getRepo.dev',
-    description: 'Making a dent in Open Source world',
-    image: '/p4.webp',
-    alt: 'GetRepo',
-    details: 'A platform designed to make a significant impact in the open source ecosystem by simplifying repository discovery and contribution. Features intuitive search, project insights, and tools to help users engage with open source projects more effectively.',
-    tech: ['Next.js', 'Framer Motion', 'Tailwind CSS', 'TypeScript', 'Rest API'],
-    github: 'https://github.com/cena0rton/getRepo.dev',
-    live: 'https://getrepo-dev.vercel.app'
-  }
+ 
 ];
 
 

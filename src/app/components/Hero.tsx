@@ -148,17 +148,20 @@ const Hero = () => {
     <>
    {scrolled && <>
     <motion.div 
-         transition={{ duration: 0.4 , ease: "easeInOut"}}
-         initial={{ opacity: 0 }}
-         animate={{ opacity: 1,  }}
+         transition={{ duration: 0.5 , ease: "easeInOut"}}
+         initial={{ opacity: 0, width: "10" }}
+         animate={{ opacity: 1, width: 'fit-content' }}
+         exit={{ opacity: 0, width: "10" }}
+         layoutId='nav-container-desktop'
       className=' mx-auto rounded-full fixed bottom-1 left-0 right-0 items-center justify-center w-fit  mb-4 bg-linear-to-r from-white via-neutral-100 to-white z-40 text-center border border-neutral-300 shadow-[0px_0px_0px_1px_rgba(0,0,0,0.06),0px_1px_1px_-0.5px_rgba(0,0,0,0.06),0px_3px_3px_-1.5px_rgba(0,0,0,0.06),_0px_6px_6px_-3px_rgba(0,0,0,0.06),0px_12px_12px_-6px_rgba(0,0,0,0.06),0px_24px_24px_-12px_rgba(0,0,0,0.06)] '>
      
      {navItems.map((item, idx) => (
        <motion.button
         layoutId={`nav-${item.label}`}
-        transition={{ duration: 0.4, delay: idx * 0.1}}
+        transition={{ duration: 0.5, delay: idx * 0.2}}
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
+        exit={{ opacity: 0 }}
         className='relative p-4'
          key={idx}
          onMouseEnter={() => setHovered(idx)}
@@ -209,13 +212,19 @@ const Hero = () => {
    
 
         {/* Desktop Navigation */}
-        <motion.div className="hidden md:flex flex-row items-center justify-end w-full relative mt-1">
+        <motion.div 
+        layoutId='nav-container-desktop'
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        exit={{ opacity: 0 }}
+        className="hidden md:flex flex-row items-center justify-end w-full relative mt-1">
         {navItems.map((item, idx) => (
           <motion.button
           layoutId={`nav-${item.label}`}
           transition={{ duration: 0.4, delay: 0.05*idx }}
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
+          exit={{ opacity: 0 }}
             key={idx}
             onClick={() => scrollToSection(item.href)}
             className=" text-center relative font-light px-2 cursor-pointer"
@@ -263,14 +272,20 @@ const Hero = () => {
 
       {/* Mobile Menu */}
       {scrolled && 
-    <motion.div className='mx-auto md:hidden rounded-full fixed left-0 right-0 bottom-1 items-center justify-center w-fit  mb-4 bg-white z-30 text-center border border-neutral-300  '>
+    <motion.div layoutId='nav-container-mobile' 
+    transition={{ duration: 0.5 , ease: "easeInOut"}}
+    initial={{ opacity: 0, width: "10" }}
+    animate={{ opacity: 1, width: 'fit-content' }}
+    exit={{ opacity: 0, width: "10" }}
+    className='mx-auto md:hidden rounded-full fixed left-0 right-0 bottom-1 items-center justify-center w-fit  mb-4 bg-white z-30 text-center border border-neutral-300  '>
      
      {navItems.map((item, idx) => (
        <motion.button
         layoutId={`nav-${item.href}`}
-        transition={{ duration: 0.4, delay: idx * 0.1}}
+        transition={{ duration: 0.5, delay: idx * 0.05}}
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
+        exit={{ opacity: 0 }}
         className='relative p-4'
          key={idx}
          onClick={() => scrollToSection(item.href)}
@@ -290,9 +305,11 @@ const Hero = () => {
 
       {!scrolled && (
         <motion.div
+          layoutId='nav-container-mobile'
           className="md:hidden border-b border-neutral-200 bg-neutral-50 overflow-x-auto w-full border-t-0 "
           initial={{ opacity: 0 }}
-          exit={{ opacity: 0, height: 0 }}
+          exit={{ opacity: 0 }}
+         
           animate={{ opacity: 1, height: 'auto' }}
           transition={{ duration: 0.5, ease: "easeInOut" }}
         >
@@ -302,6 +319,7 @@ const Hero = () => {
               transition={{ duration: 0.4, delay: 0.05*idx }}
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
+              exit={{ opacity: 0 }}
               layoutId={`nav-${item.href}`}
                 key={idx}
                 onClick={() => scrollToSection(item.href)}
