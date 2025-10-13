@@ -17,7 +17,7 @@ const projects = [
   {
     title: 'Freelance Project',
     description: 'A modern dietician app for a client',
-    image: '/p1.png',
+    image: '/p1.webp',
     alt: 'E-Commerce Platform',
     details: 'Built a dietician app with modern UI and features like appointment booking, diet plan creation, admin dashboard, and progress tracking and payment integration.',
     tech: ['Next.js', 'TypeScript', 'Tailwind CSS', 'Motion.dev', 'Google Sheet API'],
@@ -37,8 +37,8 @@ const projects = [
   {
     title: 'Portfolio',
     description: 'Personal portfolio website showcasing my work and skills',
-    image: '/p3.png',
-    alt: 'Weather Dashboard',
+    image: '/p3.webp',
+    alt: 'Portfolio',
     details: 'A personal portfolio website that highlights my projects, skills, and experience. Designed with a clean interface, responsive layout, and smooth animations to provide an engaging and accessible showcase of my work.',
     tech: ['Farmer Motion', 'Tailwind CSS', 'Next.js', 'UI/UX', "TypeScript"],
     github: 'https://github.com/cena0rton/portfolio-nextjs',
