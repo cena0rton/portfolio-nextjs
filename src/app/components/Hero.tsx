@@ -1,6 +1,6 @@
 'use client'
 import React, { JSX, useRef, useState } from 'react'
-import { motion, useMotionValueEvent, useScroll } from 'motion/react'
+import { AnimatePresence, motion, useMotionValueEvent, useScroll } from 'motion/react'
 
 const icons: Record<string, JSX.Element> = {
   x: (
@@ -149,20 +149,21 @@ const Hero = () => {
    {scrolled && <>
     <motion.div 
          transition={{ duration: 0.5 , ease: "easeInOut"}}
-         initial={{ opacity: 0, width: "10" }}
+         initial={{ opacity: 0, width: "20" }}
          animate={{ opacity: 1, width: 'fit-content' }}
          exit={{ opacity: 0, width: "10" }}
          layoutId='nav-container-desktop'
-      className=' mx-auto rounded-full fixed bottom-1 left-0 right-0 items-center justify-center w-fit  mb-4 bg-linear-to-r from-white via-neutral-100 to-white z-40 text-center border border-neutral-300 shadow-[0px_0px_0px_1px_rgba(0,0,0,0.06),0px_1px_1px_-0.5px_rgba(0,0,0,0.06),0px_3px_3px_-1.5px_rgba(0,0,0,0.06),_0px_6px_6px_-3px_rgba(0,0,0,0.06),0px_12px_12px_-6px_rgba(0,0,0,0.06),0px_24px_24px_-12px_rgba(0,0,0,0.06)] '>
+      className=' mx-auto rounded-full fixed bottom-1 max-w-full left-0 right-0 items-center justify-center w-fit  mb-4 bg-linear-to-r from-white via-neutral-100 to-white z-40 text-center border border-neutral-300 shadow-[0px_0px_0px_1px_rgba(0,0,0,0.06),0px_1px_1px_-0.5px_rgba(0,0,0,0.06),0px_3px_3px_-1.5px_rgba(0,0,0,0.06),_0px_6px_6px_-3px_rgba(0,0,0,0.06),0px_12px_12px_-6px_rgba(0,0,0,0.06),0px_24px_24px_-12px_rgba(0,0,0,0.06)] '>
      
+     <AnimatePresence>
      {navItems.map((item, idx) => (
        <motion.button
         layoutId={`nav-${item.label}`}
-        transition={{ duration: 0.5, delay: idx * 0.2}}
+        transition={{ duration: 0.5, delay: idx * 0.05}}
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         exit={{ opacity: 0 }}
-        className='relative p-4'
+        className='relative p-4 w-fit'
          key={idx}
          onMouseEnter={() => setHovered(idx)}
          onMouseLeave={() => setHovered(null)}
@@ -176,6 +177,7 @@ const Hero = () => {
          
        </motion.button>
      ))}
+     </AnimatePresence>
    </motion.div>
    </>}
    
@@ -279,13 +281,14 @@ const Hero = () => {
     exit={{ opacity: 0, width: "10" }}
     className='mx-auto md:hidden rounded-full fixed left-0 right-0 bottom-1 items-center justify-center w-fit  mb-4 bg-white z-30 text-center border border-neutral-300  '>
      
+     <AnimatePresence>
      {navItems.map((item, idx) => (
        <motion.button
         layoutId={`nav-${item.href}`}
         transition={{ duration: 0.5, delay: idx * 0.05}}
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
-        exit={{ opacity: 0 }}
+        exit={{ opacity: 0 ,}}
         className='relative p-4'
          key={idx}
          onClick={() => scrollToSection(item.href)}
@@ -300,23 +303,23 @@ const Hero = () => {
          
        </motion.button>
      ))}
+     </AnimatePresence>
    </motion.div>
    }
-
+<AnimatePresence>
       {!scrolled && (
         <motion.div
           layoutId='nav-container-mobile'
           className="md:hidden border-b border-neutral-200 bg-neutral-50 overflow-x-auto w-full border-t-0 "
           initial={{ opacity: 0 }}
           exit={{ opacity: 0 }}
-         
           animate={{ opacity: 1, height: 'auto' }}
           transition={{ duration: 0.5, ease: "easeInOut" }}
         >
           <div className="flex py-0 -ml-3">
             {navItems.map((item, idx) => (
               <motion.button
-              transition={{ duration: 0.4, delay: 0.05*idx }}
+              transition={{ duration: 0.4, delay: 0.2*idx }}
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               exit={{ opacity: 0 }}
@@ -331,6 +334,7 @@ const Hero = () => {
           </div>
         </motion.div>
       )}
+    </AnimatePresence>
     </div>
     </>
   )
