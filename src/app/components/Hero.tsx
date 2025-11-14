@@ -87,7 +87,7 @@ const Hero = () => {
   const links = [
    
     {
-      href: "https://x.com/pawanm_7",
+      href: "https://x.com/pawantxt",
       label: "X",
       icon: "x"
     },
