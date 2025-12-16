@@ -6,16 +6,17 @@ import { motion } from 'motion/react'
 const Career = () => {
     const career = [
       {
+        title: "Frontend Engineer | Oct 2025 to Present",
+        company: "Formial Labs.",
+        description: "Worked on the development of the Formial Dashboard, a comprehensive patient dashboard for Formial Labs, a personalized skincare treatment platform.",
+    },
+      {
         title: "Research Thesis | Aug 2024 to Dec 2024",
         company: "Government of India.",
         description: "Worked on Improving 5G Network Coverage at Mormugao Port and Indian Naval Vessel.",
       },
 
-        {
-            title: "Software Engineer | Present",
-            company: "Greateway Pvt Ltd.",
-            description: "Worked with clients to build their websites using React.js and Java",
-        },
+   
         {
             title: "Data Analyst | May 2023 to Jul 2023",
             company: "Autoven.",
